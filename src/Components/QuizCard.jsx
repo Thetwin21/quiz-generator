@@ -12,7 +12,6 @@ const QuizCard = ({ quizCard }) => {
     setHeight(Math.max(frontHeight, backHeight, 100));
   };
   
-
   useEffect(setMaxHeight, [quizCard.question, quizCard.answer, quizCard.options]);
 
   useEffect(() => {
