@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useState, useEffect, useRef } from "react";
 
 const QuizCard = ({ quizCard }) => {
@@ -12,7 +11,6 @@ const QuizCard = ({ quizCard }) => {
     const backHeight = backRef.current.getBoundingClientRect().height;
     setHeight(Math.max(frontHeight, backHeight, 100));
   };
-
   
 
   useEffect(setMaxHeight, [quizCard.question, quizCard.answer, quizCard.options]);
